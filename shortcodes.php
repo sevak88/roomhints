@@ -15,7 +15,7 @@ function advertising_func( $atts ){
         'post_type' => 'roomhints_ads',
         'post__in' => explode(",", $atts['ids']),
         'posts_per_page' => $atts['count'],
-        'tax_query' => []
+        'tax_query' => array()
     );
 
     if(!empty($atts["categories"])){
