@@ -3,7 +3,7 @@
 /*
 Plugin Name: Roomhints
 Plugin URI: http://roomhints.com/
-Description: Roomhints Plugin
+Description: Roomhints Plugin, Shortcode example <code>[advertising template=1 columns=3 categories=99,8,4 count=2 ids=18,88,66]</code>
 Version: 1.0
 Author: sevak
 Author URI: https://github.com/sevak88
@@ -275,8 +275,8 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                     array(
                         'key' => 'field_5bb763f28ecb9',
-                        'label' => 'Designer Tweeter',
-                        'name' => 'designer_tweeter',
+                        'label' => 'Designer Twitter',
+                        'name' => 'designer_twitter',
                         'type' => 'url',
                         'instructions' => '',
                         'required' => 0,
@@ -331,3 +331,4 @@ if( function_exists('acf_add_local_field_group') ):
     ));
 
 endif;
+

@@ -1,0 +1,91 @@
+.roomhints .roomhint{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    border: 2px solid #eee;
+    border-right: none;
+}
+.roomhints .roomhint:last-child{
+    border-right: 2px solid #eee;
+}
+.roomhints.columns-6 .roomhint{
+    width: calc(100% / 6 );
+}
+.roomhints.columns-5 .roomhint{
+    width: calc(100% / 5 );
+}
+.roomhints.columns-4 .roomhint{
+    width: calc(100% / 4 );
+}
+.roomhints.columns-3 .roomhint{
+    width: calc(100% / 3 );
+}
+.roomhints.columns-2 .roomhint{
+    width: calc(100% / 2 );
+}
+.roomhints.columns-1 .roomhint{
+    width: 100%;
+}
+.roomhints .roomhint h2{
+    line-height: 1;
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.roomhints .roomhint h4{
+    line-height: 1;
+    font-weight: 100;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.roomhints .roomhint a.roomhint-link {
+    background-color: #222;
+    padding: 10px 10px;
+    color: #fff;
+    display: inline-block;
+}
+.roomhints .roomhint .roomhint-review {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+.roomhints .roomhint .roomhint-review img{
+    border-radius: 50%;
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+.roomhints .roomhint .roomhint-review p.roomhints-designer-name{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+.roomhints .roomhint .roomhint-review a{
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+}
+.roomhints .roomhint .roomhint-review .designer-social-networks a{
+    color: #aeabab;
+    font-size: 18px;
+
+}
+.roomhints .roomhint .roomhint-review p.roomhints-designer-review-text{
+    margin: 25px 0;
+    line-height: 1.3;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.roomhints .roomhints-pro-product, .roomhints .roomhints-cons-product{
+    padding: 10px 0;
+    border-top: 2px solid #eee;
+}
+.roomhints .roomhints-pro-product p, .roomhints .roomhints-cons-product p{
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0;
+}
+.roomhints .roomhints-pro-product h6, .roomhints .roomhints-cons-product h6{
+    margin-bottom: 10px;
+}

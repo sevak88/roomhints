@@ -8,6 +8,7 @@ function advertising_func( $atts ){
         'categories' => null,
         'ids' => null,
         'count' => -1,
+        'columns' => 3,
     ), $atts );
 
     $args = array(
