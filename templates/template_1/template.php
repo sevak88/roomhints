@@ -11,10 +11,12 @@ foreach ($posts as $post){
 //    print_r($pro_product);
 
     $template .= "<div class='roomhint'>";
-        $template .= get_the_post_thumbnail( $post->ID, "thumbnail", ["alt" => $post->post_title]);
-        $template .= "<h2>{$post->post_title}</h2>";
-        $template .= "<h4>{$product_subtitle}</h4>";
-        $template .= "<a class='roomhint-link' href='{$product_button['url']}' target='{$product_button['target']}' >{$product_button['title']}</a>";
+        $template .= "<div class='roomhint-product'>";
+            $template .= get_the_post_thumbnail( $post->ID, "thumbnail", ["alt" => $post->post_title]);
+            $template .= "<h2>{$post->post_title}</h2>";
+            $template .= "<h4>{$product_subtitle}</h4>";
+            $template .= "<a class='roomhint-link' href='{$product_button['url']}' target='{$product_button['target']}' >{$product_button['title']}</a>";
+        $template .= "</div>";
         if(!empty($designer_reviews)){
             foreach ($designer_reviews as $designer_review) {
                 $template .= "<div class='roomhint-review'>";
@@ -41,10 +43,11 @@ foreach ($posts as $post){
                     if ($designer_review["designer_twitter"]) {
                         $template .= "<a href='{$designer_review["designer_twitter"]}' target='_blank'><i class='fa fa-twitter'></i> </a>";
                     }
+
+                    $template .= "</div>";
                     if ($designer_review["designer_review_text"]) {
                         $template .= "<p class='roomhints-designer-review-text'>{$designer_review["designer_review_text"]}</p>";
                     }
-                    $template .= "</div>";
 
                 $template .= "</div>";
             }

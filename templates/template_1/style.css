@@ -4,27 +4,47 @@
     margin: 0;
     border: 2px solid #eee;
     border-right: none;
+    vertical-align: bottom;
 }
-.roomhints .roomhint:last-child{
-    border-right: 2px solid #eee;
-}
+
 .roomhints.columns-6 .roomhint{
     width: calc(100% / 6 );
+}
+.roomhints.columns-6 .roomhint:nth-child(6){
+    border-right: 2px solid #eee;
 }
 .roomhints.columns-5 .roomhint{
     width: calc(100% / 5 );
 }
+.roomhints.columns-5 .roomhint:nth-child(5){
+    border-right: 2px solid #eee;
+}
 .roomhints.columns-4 .roomhint{
     width: calc(100% / 4 );
+}
+.roomhints.columns-4 .roomhint:nth-child(4){
+    border-right: 2px solid #eee;
 }
 .roomhints.columns-3 .roomhint{
     width: calc(100% / 3 );
 }
+.roomhints.columns-3 .roomhint:nth-child(3){
+    border-right: 2px solid #eee;
+}
 .roomhints.columns-2 .roomhint{
     width: calc(100% / 2 );
 }
+.roomhints.columns-2 .roomhint:nth-child(2){
+    border-right: 2px solid #eee;
+}
 .roomhints.columns-1 .roomhint{
     width: 100%;
+}
+.roomhints.columns-1 .roomhint{
+    border-right: 2px solid #eee;
+}
+.roomhints .roomhint:last-child{
+    border-right: 2px solid #eee;
 }
 .roomhints .roomhint h2{
     line-height: 1;
@@ -66,13 +86,16 @@
     font-size: 14px;
     font-weight: 700;
 }
-.roomhints .roomhint .roomhint-review .designer-social-networks a{
+.roomhints .roomhint .roomhint-review .designer-social-networks{
+    margin: 10px 0;
+
+}.roomhints .roomhint .roomhint-review .designer-social-networks a{
     color: #aeabab;
     font-size: 18px;
 
 }
 .roomhints .roomhint .roomhint-review p.roomhints-designer-review-text{
-    margin: 25px 0;
+    margin: 15px 0;
     line-height: 1.3;
     font-size: 14px;
     padding: 0 10px;
@@ -88,4 +111,18 @@
 }
 .roomhints .roomhints-pro-product h6, .roomhints .roomhints-cons-product h6{
     margin-bottom: 10px;
+}
+.roomhints .roomhint .roomhint-product{
+    min-height: 250px;
+}
+.roomhints .roomhint .roomhint-review{
+    min-height: 350px;
+    overflow-y: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .roomhints .roomhint{
+        display: block;
+        width: 100% !important;
+        border: 2px solid #eee;
+    }
 }
