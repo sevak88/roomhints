@@ -1,3 +1,7 @@
+@font-face {
+    font-family: HelveticaRegular;
+    src: url(fonts/HelveticaRegular/HelveticaRegular.woff);
+}
 .roomhints .roomhint{
     display: inline-block;
     text-align: center;
@@ -60,6 +64,9 @@
     text-transform: uppercase;
     font-size: 12px;
 }
+.roomhints .roomhint .roomhint-review h4, .roomhints .roomhint .roomhints-pro-product h6, .roomhints .roomhint .roomhints-cons-product h6{
+    font-family: HelveticaRegular;
+}
 .roomhints .roomhint a.roomhint-link {
     background-color: #222;
     padding: 10px 10px;
@@ -69,6 +76,11 @@
 .roomhints .roomhint .roomhint-review {
     margin-top: 20px;
     padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+.roomhints .roomhint .designer-image {
+
+    padding: 20px 0;
     border-top: 2px solid #eee;
 }
 .roomhints .roomhint .roomhint-review img{
@@ -101,7 +113,7 @@
     padding: 0 10px;
 }
 .roomhints .roomhints-pro-product, .roomhints .roomhints-cons-product{
-    padding: 10px 0;
+    padding: 10px;
     border-top: 2px solid #eee;
 }
 .roomhints .roomhints-pro-product p, .roomhints .roomhints-cons-product p{
@@ -114,6 +126,9 @@
 }
 .roomhints .roomhint .roomhint-product{
     min-height: 250px;
+}
+.roomhints .roomhint .roomhint-product > img {
+    padding: 20px 10px;
 }
 .roomhints .roomhint .roomhint-review{
     min-height: 350px;

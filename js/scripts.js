@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $(".roomhint-review").height(review_max + 40)
+    $(".roomhint-review").height(review_max)
     $(".roomhints-pro-product").height(pro_max)
     $(".roomhints-cons-product").height(cons_max)
 

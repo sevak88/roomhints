@@ -8,6 +8,7 @@ foreach ($posts as $post){
     $designer_reviews = get_field('designer_review', $post->ID);
     $pro_product = get_field('pro_product', $post->ID);
     $cons_product = get_field('cons_product', $post->ID);
+    $designer_image = get_field('designer_image', $post->ID);
 //    print_r($pro_product);
 
     $template .= "<div class='roomhint'>";
@@ -51,6 +52,11 @@ foreach ($posts as $post){
 
                 $template .= "</div>";
             }
+        }
+        if(!empty($designer_image)){
+            $template .= "<div class='designer-image'>";
+                $template .= "<img src='{$designer_image["sizes"]["thumbnail"]}' alt='{$designer_image["alt"]}' >";
+            $template .= "</div>";
         }
         if(!empty($pro_product)){
             $template .= "<div class='roomhints-pro-product'>";
